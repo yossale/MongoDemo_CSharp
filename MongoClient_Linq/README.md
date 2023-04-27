@@ -1,8 +1,11 @@
 # C# Mongo Client
 
-Using the `sample_mflix` DB and `movies` collection to show case some of C# driver capabilities
+Using the `sample_mflix` DB and `movies` collection to show case some of C# driver capabilities.
+
 
 ## Setup: 
+1. Make sure to add you IP to the Atlas whitelist! 
+
 1. Add a `setEnv.sh` file that looks like this:
 ```
 export MFLIX_DEMO_USER=<YOUR_USER_NAME>

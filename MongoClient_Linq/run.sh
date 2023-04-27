@@ -1,0 +1,1 @@
+source ./setEnv.sh && dotnet run --property WarningLevel=0

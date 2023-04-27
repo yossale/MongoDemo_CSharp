@@ -1,6 +1,25 @@
 # C# Mongo Client
 
-Using the `sample_restaurant` DB and `restaurant` collection to show case some of C# driver capabilities
+Using the `sample_mflix` DB and `movies` collection to show case some of C# driver capabilities
+
+## Setup: 
+1. Add a `setEnv.sh` file that looks like this:
+```
+export MFLIX_DEMO_USER=<YOUR_USER_NAME>
+export MFLIX_DEMO_PASS=<YOUR_PASS>
+export ATLAS_URI="mongodb+srv://${MFLIX_DEMO_USER}:${MFLIX_DEMO_PASS}@<YOUR_CLUSTER_URI>.mongodb.net/?retryWrites=true&w=majority"
+```
+
+2. make sure to install MongoDB .Net driver:
+```
+dotnet add package MongoDB.Driver
+```
+
+3. run! 
+```
+./run.sh
+```
+
 
 ## Resources:
 
@@ -9,10 +28,3 @@ Using the `sample_restaurant` DB and `restaurant` collection to show case some o
 [Mongo Driver - Quick Start C#](https://www.mongodb.com/docs/drivers/csharp/current/quick-start/)
 
 [LINQ](https://www.mongodb.com/docs/drivers/csharp/current/fundamentals/linq/)
-
-
-## To Run
-```sh
-source ./setEnv.sh
-dotnet run
-```

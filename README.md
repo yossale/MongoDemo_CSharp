@@ -18,7 +18,7 @@ export MFLIX_DEMO_PASS=<YOUR_PASS>
 export ATLAS_URI="mongodb+srv://${MFLIX_DEMO_USER}:${MFLIX_DEMO_PASS}@<YOUR_CLUSTER_URI>.mongodb.net/?retryWrites=true&w=majority"
 ```
 
-1. Cd to your favourite project.
+1. CD to your favourite project.
 
 2. make sure to install MongoDB .Net driver:
 ```

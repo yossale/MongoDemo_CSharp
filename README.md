@@ -2,6 +2,11 @@
 
 Using the `sample_mflix` DB and `movies` collection to show case some of C# driver capabilities.
 
+We're running the same queries in 3 different ways:
+1. `nflix.mongodb` is a natural mdb sample.
+2. `MongoClient` uses regular C# constructs (`Filter`)
+3. `MongoClient_Linq` is resolving the queries using LINQ.
+
 
 ## Setup: 
 1. Make sure to add you IP to the Atlas whitelist! 
@@ -13,6 +18,8 @@ export MFLIX_DEMO_PASS=<YOUR_PASS>
 export ATLAS_URI="mongodb+srv://${MFLIX_DEMO_USER}:${MFLIX_DEMO_PASS}@<YOUR_CLUSTER_URI>.mongodb.net/?retryWrites=true&w=majority"
 ```
 
+1. Cd to your favourite project.
+
 2. make sure to install MongoDB .Net driver:
 ```
 dotnet add package MongoDB.Driver
@@ -22,7 +29,6 @@ dotnet add package MongoDB.Driver
 ```
 ./run.sh
 ```
-
 
 ## Resources:
 

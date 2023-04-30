@@ -1,6 +1,6 @@
 use('sample_mflix');
 
-db.movies.findOne()
+db.movies.findOne({title: "Back to the Future"})
 
 db.movies.find({
     year: {$gte: 1985, $lt: 1990},

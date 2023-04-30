@@ -33,3 +33,4 @@ var ryanReynTimeOnScreen =
 foreach(var result in ryanReynTimeOnScreen) {
     Console.WriteLine("{0} appeared on screen for {1} minutes!", result.Cast, result.Sum);
 }
+

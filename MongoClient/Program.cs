@@ -40,7 +40,7 @@ Console.WriteLine("\n Ryan Reynolds Screen time");
 
 var pipeline = new BsonDocument[]
 {
-    new BsonDocument("$match", new BsonDocument("cast", "Ryan Reynolds")),
+    new BsonDocument("$match", new BsonDocument("cast", "Ryan Reynolds")),    
     new BsonDocument("$group", new BsonDocument("_id", "Ryan Reynolds")
         .Add("totalRuntime", new BsonDocument("$sum", "$runtime")))
 };

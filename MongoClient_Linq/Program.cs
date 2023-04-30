@@ -25,8 +25,7 @@ foreach(Movie film in michaelKeatonMovies) {
 Console.WriteLine("");
 var ryanReynTimeOnScreen = 
             from movie in moviesCollection.AsQueryable()
-            where movie.Cast.Contains("Ryan Reynolds")
-            from cast in movie.Cast
+            where movie.Cast.Contains("Ryan Reynolds") from cast in movie.Cast            
             where cast == "Ryan Reynolds"
             group movie by cast into g
             select new { Cast = g.Key, Sum = g.Sum(x => x.Runtime) };

@@ -1,0 +1,14 @@
+use('sample_mflix');
+
+db.movies.findOne()
+
+db.movies.find({
+    year: {$gte: 1985, $lt: 1990},
+    cast: {$in: ["Michael Keaton"]}
+})
+
+db.movies.aggregate([
+    {$match: {cast: {$in: ["Ryan Reynolds"]}}},
+    {$set: {cast: "Ryan Reynolds"}},
+    {$group: {_id: "cast", sum: {$sum: "$runtime"}}}
+])

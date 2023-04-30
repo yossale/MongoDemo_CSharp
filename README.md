@@ -37,3 +37,6 @@ dotnet add package MongoDB.Driver
 [Mongo Driver - Quick Start C#](https://www.mongodb.com/docs/drivers/csharp/current/quick-start/)
 
 [LINQ](https://www.mongodb.com/docs/drivers/csharp/current/fundamentals/linq/)
+
+[How to Create a .NET Core App with MongoDB Atlas
+](https://www.youtube.com/watch?v=iklJHXn8D1s&t=2s&ab_channel=MongoDB)
